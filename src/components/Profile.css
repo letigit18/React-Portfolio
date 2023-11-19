@@ -1,0 +1,29 @@
+.profile-container{
+    background-color: white;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.profile-title{
+    color: #192655;
+    text-align: center;
+}
+.profile-title h2{
+    position: relative;
+}
+.profile-title h2::after{
+    content: '';
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 3px;
+    left: 45%;
+    bottom: -1px;
+    background-color: #ff6600;
+}
+.profile-detail{
+    margin: 10px 20px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 25px;
+}

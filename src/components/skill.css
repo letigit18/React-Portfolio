@@ -1,0 +1,146 @@
+.skill-container{
+    background-color: white;
+    width: 100%;
+}
+.skill-title{
+    
+    padding: 20px 20px;
+    text-align: center;
+}
+.skill-title h2{
+    position: relative;
+}
+.skill-box h3{
+    margin-bottom: 10px;
+}
+.skill-title h2::after{
+    content: '';
+    position: absolute;
+    text-align: center;
+    width: 35px;
+    height: 3px;
+    left: 48%;
+    bottom: -1px;
+    background-color: #ff6600;
+}
+.box-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.skill-type span{
+    margin-top: 3px;
+}
+.skill-bar{
+
+    height: 8px;
+    border-radius: 5px;
+    margin-top: 3px;
+    background-color: rgba(0,0,0, 0.1);
+}
+.skill-box{
+    width: 30%;
+    padding-bottom: 15px;
+
+}
+.skillper{
+    position: relative;
+    width: 95%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+    background-color: #ff6600;
+    opacity: 0;
+    animation: progress 1s ease forwards;
+}
+.skillper.css{
+    width: 91%;
+    animation-delay: 0.1s;
+}
+.skillper.js{
+    width: 93%;
+    animation-delay: 0.2s;
+}
+.skillper.jsx{
+    width: 90%;
+    animation-delay: 0.3s;
+}
+.skillper.react{
+    width: 85%;
+    animation-delay: 0.4s;
+}
+.skillper.redux{
+    width: 88%;
+    animation-delay: 0.5s;
+}
+.skillper.jquery{
+    width: 15%;
+    animation-delay: 0.6s;
+}
+.skillper.node{
+    width: 80%;
+    animation-delay: 0.1s;
+}
+.skillper.php{
+    width: 70%;
+    animation-delay: 0.2s;
+}
+.skillper.java{
+    width: 40%;
+    animation-delay: 0.3s;
+}
+.skillper.python{
+    width: 30%;
+    animation-delay: 0.4s;
+}
+.skillper.sql{
+    width: 90%;
+    animation-delay: 0.5s;
+}
+.skillper.mongo{
+    width: 75%;
+    animation-delay: 0.6s;
+}
+.skillper.ps{
+    width: 90%;
+    animation-delay: 0.1s;
+}
+.skillper.tw{
+    width: 96%;
+    animation-delay: 0.2s;
+}
+
+.skillper.communication{
+    width: 94%;
+    animation-delay: 0.3s;
+}
+.skillper.pm{
+    width: 80%;
+    animation-delay: 0.6s;
+}
+
+
+
+@keyframes progress{
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 400px){
+    .skill-type span{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 300px){
+    .box-container{
+        flex-direction: column;
+    }
+    .skill-box{
+        width: 80%;
+    }
+}
